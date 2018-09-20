@@ -1,0 +1,53 @@
+.Header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
+.Red{
+    height: 100%;
+    width: 25%;
+    background-color: red;
+}
+.Pink{
+    height: 100%;
+    width:68%;
+    background-color: pink;
+}
+.Content-orange{
+    margin: 20px;
+    background-color: orange;
+    width: 97%;
+    height: 100px;
+}
+.H{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+     
+}
+.Blue{
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+}
+.Content-yellow{
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Yellow{
+    height: 100px;
+    width: 55%;
+    background-color: yellow;
+}
+.Ye{
+    height: 100px;
+    width: 38%;
+    background-color: yellow;
+}
