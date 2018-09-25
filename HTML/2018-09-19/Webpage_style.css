@@ -1,0 +1,75 @@
+body{
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: yellowgreen;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 100%;
+    height: 200px;
+}
+
+.qc {
+    width: 70%;
+}
+.menu {
+    padding: 10px 0;
+    background-color: brown;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: yellow;
+}
+
+.menu ul li:hover {
+    background-color: yellow;
+    color: red;
+}
+ 
+.center-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.new {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.new img {
+    width: 100%;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left {
+    width: 45%;
+    display: flex;
+}
+
+.footer-left img {
+    width: 50%;
+    height: 150px;
+}
+
+.footer-right {
+    width: 45%;
+}
