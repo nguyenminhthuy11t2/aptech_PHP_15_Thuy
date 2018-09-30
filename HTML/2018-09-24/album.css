@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    color: white;
+} 
+.top {
+    padding: 10px;
+} 
+.top i{
+    margin-right: 5px;
+    color: outline-black;
+}
+
+.top h4 b {
+    font-size: 1.25rem;
+}
+
+.menu {
+    text-align: right;
+    float: right;
+}
+
+.menu i {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.main {
+    font-weight: 300;
+    color: black;
+    margin-top: 70px;
+}
+
+.main h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+.main p {
+    color: #6c757d;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.thumb {
+    background-color:  #e9ecef;
+    padding: 50px 12%;
+    color: black;
+}
+.card {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.d-flex .btn-group .btn {
+    padding: 0px 5px;
+    font-size: 12px;
+    max-height: 30px;
+}
+.footer p {
+    color: black;
+    text-align: left;
+}
