@@ -1,0 +1,60 @@
+.featurette-divider {
+    margin: 5rem;
+}
+
+a.text-light:hover, a.text-light:focus  {
+    color: white !important;
+}
+
+a.non-hover:hover, 
+a.non-hover:focus {
+    color: #6c757d !important;
+}
+.carousel-caption {
+    bottom: 5rem;
+}
+.imge {
+    height: 150px;
+    width: 150px;
+    background-image: url(https://png.pngtree.com/element_origin_min_pic/16/12/30/effac6059c198d4ef426a4b3690219c4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    
+    /* margin-left: 100px; */
+}
+.img-top {
+    height: 500px;
+    background-image: url(https://picsum.photos/200/800/?random);
+    background-position: center;
+    background-size: cover;
+}
+.custom-img {
+    border: 0px;
+    background-color: white;
+}
+.custom-Text {
+    border: 0px;
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+        .card-deck{
+            flex-flow: column;
+            display: block;
+        }
+
+        .form-search{
+            display: none;
+            margin-left: 20px;
+        }
+        
+    }
+@media screen and (min-width: 768px) {
+        .card-deck {
+            flex-flow: row wrap;
+            display: flex ;   
+        }
+        .form-search{
+            display: flex;
+        } 
+    }

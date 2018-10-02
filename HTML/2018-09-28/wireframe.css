@@ -1,0 +1,13 @@
+.Main {
+    height: 200px;
+    background-image: url(https://picsum.photos/200/800/?random);
+    background-position: center;
+    background-size: cover;
+
+}
+.Slide {
+    height: 350px;
+    background-image: url(https://picsum.photos/200/800/?random);
+    background-position: center;
+    background-size: cover; 
+}
