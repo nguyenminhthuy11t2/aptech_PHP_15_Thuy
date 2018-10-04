@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <img id="image" src="./pic_bulboff.gif">
+    <button onclick="ON()">Turn on the light</button>
+    <button onclick="OFF()">Turn off the light</button>
+    
+    
+    <script>
+        function ON() {
+            var a = document.getElementById("image");
+                if (a.src.match("pic_bulboff.gif")) {
+                    a.src = "./pic_bulbon.gif"
+                }
+        }
+        function OFF() {
+            var a = document.getElementById("image");
+                if (a.src.match("pic_bulbon.gif")) {
+                    a.src = "./pic_bulboff.gif"
+                }
+        }
+
+    </script>
+</body>
+</html>

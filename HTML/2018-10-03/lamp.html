@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <style>
+      .light  {
+          background: url("https://www.w3schools.com/js/pic_bulboff.gif") no-repeat;
+          /* background-image: url(); */
+
+          width: 100px;
+          height: 200px;
+      }
+
+      .other{
+        background: url("https://www.w3schools.com/js/pic_bulbon.gif") no-repeat;
+      }
+
+      .other-off{
+        background: url("https://www.w3schools.com/js/pic_bulboff.gif") no-repeat;
+      }
+    </style>
+</head>
+<body>
+    <div class="light"> </div>
+    <button id="btn-on">bat</button>
+    <button id="btn-off">tat</button>
+    <script>
+    $ (document).ready(function(){
+
+        $ ("#btn-on").click(function(){
+            $ ("div").addClass("other")
+        });
+        
+        $ ("#btn-off").click(function(){
+            $ ("div").addClass("other-off")
+        });
+    });
+    </script>
+</body>
+</html>
