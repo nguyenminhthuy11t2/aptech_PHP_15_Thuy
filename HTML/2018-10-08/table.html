@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<div id="div1"></div>
+<script>
+var table='<table id="table1" class="table"></table>';
+$('#div1').append(table);
+var thead='<thead id="thead1"></thead>';
+$(thead).appendTo('#table1');
+var tr='<tr id="tr1"></tr>';
+$(tr).appendTo('#thead1');
+var th='<th>#</th><th>Name</th><th>Age</th><th>Email</th>';
+$(th).appendTo('#tr1')
+
+var tbody='<tbody id="tbody1"></tbody>'
+$('#thead1').after(tbody);
+var trbody='<tr id="trbody1"></tr>';
+$(trbody).appendTo('#tbody1');
+var thid='<th>1</th>';
+var tdname='<td>Nguyen Minh Thuy</td>';
+var tdage='<td>23</td>';
+var tdemail='<td>thuy123@gmail.com</td>';
+$('#trbody1').append(thid,tdname,tdage,tdemail);
+</script>  
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+    
+<script>
+var q = {
+      "users": [
+        {
+          "id": 8,
+          "name": "Pink Kuhn",
+          "email": "johnston.katelin@example.org",
+          "password": "*=Oo-liH",
+          "created_at": "2018-09-12 12:40:06",
+          "updated_at": "2018-09-12 12:40:06"
+        },
+        {
+          "id": 9,
+          "name": "Leonie Pouros",
+          "email": "rlabadie@example.org",
+          "password": ">XuwS5}?",
+          "created_at": "2018-09-12 12:40:07",
+          "updated_at": "2018-09-12 12:40:07"
+        },
+        {
+          "id": 10,
+          "name": "Dagmar Roob",
+          "email": "frankie.lehner@example.net",
+          "password": "o:)f5V",
+          "created_at": "2018-09-12 12:40:07",
+          "updated_at": "2018-09-12 12:40:07"
+        },
+        {
+          "id": 11,
+          "name": "Etha Veum",
+          "email": "gabrielle58@example.net",
+          "password": "XmIl@bO*eUwt5ugnuW3v",
+          "created_at": "2018-09-12 12:40:08",
+          "updated_at": "2018-09-12 12:40:08"
+        },
+        {
+          "id": 12,
+          "name": "thành vương",
+          "email": "dfritsch@example.org",
+          "password": "z!d5~s.B;Rj{y@B?",
+          "created_at": "2018-09-12 12:40:08",
+          "updated_at": "2018-10-04 11:08:35"
+        },
+        {
+          "id": 13,
+          "name": "Donato O'Conner",
+          "email": "xkuphal@example.net",
+          "password": "K?Rp}+$l_!j/yD*4",
+          "created_at": "2018-09-12 12:40:08",
+          "updated_at": "2018-09-12 12:40:08"
+        },
+        {
+          "id": 14,
+          "name": "Dr. Ona Bogisich MD",
+          "email": "will.laron@example.com",
+          "password": "b<\\h&aetsXG?\\U]",
+          "created_at": "2018-09-12 12:40:09",
+          "updated_at": "2018-09-12 12:40:09"
+        }
+    ]}
+
+
+
+function myFunction() {
+    var x = document.createElement("TABLE");
+    x.setAttribute("id", "myTable");
+    document.body.appendChild(x);
+
+    var y = document.createElement("TR");
+    y.setAttribute("id", "myTr");
+    document.getElementById("myTable").appendChild(y);
+
+    var h = document.createElement("TH");
+    var texth = document.createTextNode("#");
+    h.appendChild(texth);
+    document.getElementById("myTr").appendChild(h);
+
+    var g = document.createElement("TH");
+    var textg = document.createTextNode("Name");
+    g.appendChild(textg);
+    document.getElementById("myTr").appendChild(g);
+
+    var k = document.createElement("TH");
+    var textk = document.createTextNode("Email");
+    k.appendChild(textk);
+    document.getElementById("myTr").appendChild(k);
+
+    
+    
+
+    var i,index;
+    var count=Object.keys(q.users).length;
+    for(i=0; i < count; i++){
+    index=i;
+    var d = document.createElement("TR");
+    d.setAttribute("id", 'tr_'+i);
+    document.getElementById("myTable").appendChild(d);
+
+    // var thid='<th>'+ q.users[index].id + "</th>";
+    // var tdname='<td>' + q.users[index].name + '</td>';
+    // var tdemail ='<td>' +q.users[index].email + '</td>';
+    var z = document.createElement("TD");
+    var textz = document.createTextNode(q.users[index].id);
+    z.appendChild(textz);
+    document.getElementById('tr_'+i).appendChild(z);
+
+     var a = document.createElement("TD");
+    var texta = document.createTextNode(q.users[index].name);
+    a.appendChild(texta);
+    document.getElementById('tr_'+i).appendChild(a);
+
+     var c = document.createElement("TD");
+    var textc = document.createTextNode(q.users[index].email);
+    c.appendChild(textc);
+    document.getElementById('tr_'+i).appendChild(c);
+
+}
+}
+
+    
+myFunction();
+</script>
+</body>
+</html>
