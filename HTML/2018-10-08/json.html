@@ -841,12 +841,13 @@ var tr='<tr id="tr1"></tr>';
 $(tr).appendTo('#thead1');
 var th='<th>#</th><th>Name</th><th>Email</th><th>password</th><th>Created_at</th><th>Updated_at</th>';
 $(th).appendTo('#tr1')
+
 var i,index;
 var count=Object.keys(c.users).length;
-// for (index in c.users) {
-    for(i=0; i < count; i++){
 
+    for(i=0; i < count; i++){
     index=count-i-1;
+
     var tbody='<tbody id="tbody1"></tbody>'
     $('#thead1').after(tbody);
     var trbody='<tr id="trbody1"></tr>';

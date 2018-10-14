@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <button>turn on</button>
+    
+    <div id="js-div"></div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $.get("http://101.0.86.110:6699/api/v1/posts?page=2", function(response){
+                    var a = response.data.posts.data;
+                    console.log(a);
+                    
+                    for(i=0 ; i< a.length ; i++){
+                        var div = '<div id="div1-' + a[i].id +'">';
+                        $(div).appendTo('#js-div');
+
+                        var author = '<h5>'+ a[i].author +'</h5>';
+                        $(author).appendTo("#div1-" +a[i].id);
+                            var tdauthor = '<td>' + a[i].author.id + '</td><td>' + a[i].author.name + '</td> ';
+                             $(tdauthor + a[i].id).appendTo(author);
+
+                        var categories = '<h5>'+ a[i].categories +'</h5>';
+                        $(categories).appendTo("#div1-" +a[i].id);
+                            var tdcate = '<td>' + a[i].categories.content + '</td> ';
+                            $(tdcate + a[i].id).appendTo(categories);
+                        
+                        var h1 = '<h1>'+ a[i].title +'</h1>';
+                        $(h1).appendTo("#div1-" +a[i].id);
+                        
+                        var img = '<img >'
+                    }
+                });
+            });
+        });
+            
+                
+    </script>
+</body>
+</html>
